@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnhDev - Programming Course</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'space-grotesk': ['Space Grotesk', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-space-grotesk bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-10 py-3">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-4">
+          <div class="w-4 h-4 relative">
+            <!-- Database icon -->
+            <svg viewBox="0 0 16 16" fill="none" class="w-full h-full">
+              <path d="M8 2C4.686 2 2 3.343 2 5v6c0 1.657 2.686 3 6 3s6-1.343 6-3V5c0-1.657-2.686-3-6-3z"
+                fill="#0D141C" />
+              <ellipse cx="8" cy="5" rx="6" ry="3" fill="none" stroke="#0D141C" stroke-width="1" />
+            </svg>
+          </div>
+          <h1 class="text-lg font-bold text-gray-900">AnhDev</h1>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex items-center gap-8">
+          <nav class="flex items-center gap-9">
+            <a href="#" class="text-sm font-medium text-gray-900 hover:text-blue-600">Courses</a>
+            <a href="#" class="text-sm font-medium text-gray-900 hover:text-blue-600">About</a>
+            <a href="#" class="text-sm font-medium text-gray-900 hover:text-blue-600">Contact</a>
+          </nav>
+          <button
+            class="bg-blue-500 hover:bg-blue-600 text-white text-sm font-bold px-4 py-2.5 rounded-xl transition-colors">
+            Enroll Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-40 py-5">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl h-[480px] relative overflow-hidden mb-4">
+      <!-- Background coding image overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-16">
+        <div class="max-w-4xl">
+          <h2 class="text-5xl font-bold mb-4 tracking-tight">Unlock Your Coding Potential</h2>
+          <p class="text-lg mb-8 opacity-90">
+            Join AnhDev's home programming class and embark on a journey to master the art of coding. Our comprehensive
+            curriculum and expert instructors will guide you every step of the way.
+          </p>
+          <button
+            class="bg-blue-500 hover:bg-blue-600 text-white text-base font-bold px-6 py-3 rounded-xl transition-colors">
+            Enroll Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Curriculum Section -->
+    <section class="mb-16">
+      <div class="px-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 pt-5 pb-3">Course Curriculum</h2>
+
+        <div class="grid grid-cols-3 gap-3 mb-16">
+          <!-- Module 1 -->
+          <div class="bg-white border border-gray-300 rounded-lg p-4">
+            <div class="flex items-start gap-3">
+              <!-- Code icon -->
+              <div class="w-6 h-6 mt-1 flex-shrink-0">
+                <svg viewBox="0 0 24 24" fill="none" class="w-full h-full">
+                  <path
+                    d="M13 3L7.5 21L9 21.5L14.5 3.5L13 3ZM8 8L2 12L8 16V13H12V11H8V8ZM16 8V11H20V13H16V16L22 12L16 8Z"
+                    fill="#0D141C" />
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-base font-bold text-gray-900 mb-2">Module 1: Foundations of Programming</h3>
+                <p class="text-sm text-blue-600">Learn the basics of programming with hands-on exercises and real-world
+                  examples.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="bg-white border border-gray-300 rounded-lg p-4">
+            <div class="flex items-start gap-3">
+              <!-- Computer icon -->
+              <div class="w-6 h-6 mt-1 flex-shrink-0">
+                <svg viewBox="0 0 24 24" fill="none" class="w-full h-full">
+                  <path
+                    d="M21 16V4a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6l-2 2v1h8v-1l-2-2h6a2 2 0 0 0 2-2zM5 4h14v12H5V4z"
+                    fill="#0D141C" />
+                  <rect x="9" y="6" width="6" height="2" fill="#0D141C" />
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-base font-bold text-gray-900 mb-2">Module 2: Advanced Concepts</h3>
+                <p class="text-sm text-blue-600">Dive deeper into advanced topics such as data structures, algorithms,
+                  and object-oriented programming.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="bg-white border border-gray-300 rounded-lg p-4">
+            <div class="flex items-start gap-3">
+              <!-- Project icon -->
+              <div class="w-6 h-6 mt-1 flex-shrink-0">
+                <svg viewBox="0 0 24 24" fill="none" class="w-full h-full">
+                  <path
+                    d="M12 2L13.09 6.26l4.24-1.41L16.74 9.09L21 10L16.74 10.91l.59 4.24L13.09 13.74L12 18l-1.09-4.26l-4.24 1.41L7.26 10.91L3 10l4.26-.91L6.67 4.85l4.24 1.41L12 2z"
+                    fill="#0D141C" />
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-base font-bold text-gray-900 mb-2">Module 3: Project Development</h3>
+                <p class="text-sm text-blue-600">Apply your knowledge by building a complete project from scratch,
+                  showcasing your skills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Testimonials Section -->
+    <section class="mb-16">
+      <div class="px-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 pt-5 pb-3">Student Testimonials</h2>
+
+        <div class="grid grid-cols-3 gap-3">
+          <!-- Sarah Chen -->
+          <div class="bg-white rounded-lg p-4 min-h-60">
+            <div class="h-[240px] bg-blue-100 rounded-xl mb-3 overflow-hidden">
+              <!-- Student illustration placeholder -->
+              <div class="w-full h-full bg-gradient-to-br from-blue-200 to-blue-300 flex items-center justify-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center">
+                  <span class="text-2xl font-bold text-blue-600">SC</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-gray-900 mb-2">Sarah Chen</h3>
+            <p class="text-sm text-blue-600">AnhDev's class transformed my understanding of programming. The instructors
+              were incredibly supportive, and the curriculum was well-structured and engaging.</p>
+          </div>
+
+          <!-- David Lee -->
+          <div class="bg-white rounded-lg p-4 min-h-60">
+            <div class="h-[240px] bg-teal-100 rounded-xl mb-3 overflow-hidden">
+              <!-- Student illustration placeholder -->
+              <div class="w-full h-full bg-gradient-to-br from-teal-200 to-teal-400 flex items-center justify-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center">
+                  <span class="text-2xl font-bold text-teal-600">DL</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-gray-900 mb-2">David Lee</h3>
+            <p class="text-sm text-blue-600">I highly recommend this course to anyone looking to enhance their coding
+              skills. The hands-on projects were invaluable in solidifying my knowledge.</p>
+          </div>
+
+          <!-- Team Project -->
+          <div class="bg-white rounded-lg p-4 min-h-60">
+            <div class="h-[240px] bg-green-100 rounded-xl mb-3 overflow-hidden">
+              <!-- Team illustration placeholder -->
+              <div class="w-full h-full bg-gradient-to-br from-green-200 to-green-400 flex items-center justify-center">
+                <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center">
+                  <span class="text-2xl font-bold text-green-600">TP</span>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-base font-bold text-gray-900 mb-2">Team Project</h3>
+            <p class="text-sm text-blue-600">Our team project was a fantastic opportunity to collaborate and apply what
+              we learned. The guidance from the instructors was instrumental in our success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="mb-16">
+      <div class="bg-gray-100 rounded-xl py-20 px-10 text-center">
+        <h2 class="text-4xl font-bold text-gray-900 mb-8 tracking-tight">Ready to Start Your Coding Journey?</h2>
+        <button
+          class="bg-blue-500 hover:bg-blue-600 text-white text-base font-bold px-6 py-3 rounded-xl transition-colors">
+          Enroll Now
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="max-w-6xl mx-auto px-5 py-10">
+    <div class="flex flex-wrap items-center justify-between gap-6 mb-6">
+      <a href="#" class="text-base text-blue-600 hover:text-blue-700">Privacy Policy</a>
+      <a href="#" class="text-base text-blue-600 hover:text-blue-700">Terms of Service</a>
+      <a href="#" class="text-base text-blue-600 hover:text-blue-700">Contact Us</a>
+    </div>
+
+    <div class="flex justify-center gap-4 mb-6">
+      <!-- Twitter -->
+      <a href="#" class="w-6 h-6 text-blue-600 hover:text-blue-700">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full">
+          <path
+            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+        </svg>
+      </a>
+
+      <!-- Facebook -->
+      <a href="#" class="w-6 h-6 text-blue-600 hover:text-blue-700">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full">
+          <path
+            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        </svg>
+      </a>
+
+      <!-- Instagram -->
+      <a href="#" class="w-6 h-6 text-blue-600 hover:text-blue-700">
+        <svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full">
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="text-center">
+      <p class="text-base text-blue-600">©2024 AnhDev. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
